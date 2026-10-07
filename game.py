@@ -26,8 +26,6 @@ class Game:
 
             if col is None or self.board.drop(col, self.turn) is None:
                 print("Column unavailable.")
-                if self.turn == "O":
-                    return
                 continue
 
             if self.board.winner(self.turn):
