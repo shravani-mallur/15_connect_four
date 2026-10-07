@@ -27,6 +27,8 @@ class Game:
             if col is None or self.board.drop(col, self.turn) is None:
                 print("Column unavailable.")
                 continue
+            print("Player", self.turn, "placed a disc in column", col + 1, ".")
+
 
             if self.board.winner(self.turn):
                 self.board.print()
